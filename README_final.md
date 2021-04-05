@@ -24,7 +24,7 @@ defaults on his/her loan. The value can be interpreted as follows (given in trai
 
 The metric we used for the purpose of training the deployment model is <b> AUC Score </b>. This repository just deals with the Deployment part and the actual model training :
 for both <i> Deployment </i> and <i> Challenge </i> will be shared in later repositories. For testing this, I have included a Light GBM model pickle file with this repo, located 
-in the <i> Model </> folder. 
+in the <i> Model </i> folder. 
 
 ## How to test this project 
 
