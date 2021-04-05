@@ -34,10 +34,10 @@ To test this project, just follow the steps given below:
   <li> First, clone this repository in the directory you want your project in. In my case, it was on the virtual server running Ubuntu. </li>
   <li> After that is done, create a new virtual environment. Just run the following commands in the terminal :
         
-        <i> sudo apt install python3-venv </i>
-        <i> python3 -m venv my-project-env </i>
-        <i> source my-project-env/bin/activate </i>
-        <i> pip install -r requirements.txt </i>
+        sudo apt install python3-venv
+        python3 -m venv my-project-env
+        source my-project-env/bin/activate
+        pip install -r requirements.txt
         
   </li>
   <li> After this is done, just run the app.py file:
@@ -46,12 +46,12 @@ To test this project, just follow the steps given below:
        If everything goes as planned, your flask app should be up and running on port 5000. You can do the following:
        <ul>
         
-        <li> Go to <b><your ip or localhost>:5000/fetch_data</b> to open up a form which takes the applicant data input. You also have to upload 
-        a csv file for the previous application data. I have incuded an example csv file in the <i> uploads/ <i> folder. You only need that specific
+        Go to **<your ip or localhost>:5000/fetch_data** to open up a form which takes the applicant data input. You also have to upload 
+        a csv file for the previous application data. I have incuded an example csv file in the  uploads/ folder. You only need that specific
         columns. I will add an additional file stating what features you need for the current and previous application data for testing. 
         
-        <li> Once you enter all the data and press the <b> Predict </b> button, you will be redirected to a new page which just returns a raw json file with 
-        predicted label and probablity value. </li>
+        Once you enter all the data and press the *Predict* button, you will be redirected to a new page which just returns a raw json file with 
+        predicted label and probablity value.
         
        </ul>
   
