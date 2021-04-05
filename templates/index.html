@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<title>Home Credit Prediction Form</title>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <style>
+        html,
+        body {
+            display: flex;
+            justify-content: center;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        form {
+            border: 5px solid #f1f1f1;
+        }
+
+        input[type=text],
+        input[type=number],
+        input[type=file] {
+            width: 50%;
+            padding: 25px 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .icon {
+            font-size: 110px;
+            display: flex;
+            justify-content: center;
+            color: #4286f4;
+        }
+
+        button {
+            background-color: #4286f4;
+            color: white;
+            padding: 14px 0;
+            margin: 10px 0;
+            border: none;
+            cursor: grab;
+            width: 48%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 18;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .formcontainer {
+            text-align: center;
+            margin: 24px 50px 12px;
+        }
+
+        .container {
+            padding: 25px 0;
+            text-align: left;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 0;
+            padding-right: 15px;
+        }
+
+        /* Change styles for span on extra small screens */
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+        <h1> Home Credit Default Risk Prediction </h1>
+
+        <div class="formcontainer">
+            <div class="container">
+                <label for="uname"><strong>Name:</strong></label>
+                <input type="text" placeholder="Enter your Name" name="uname" required> <br />
+
+                <label for="AGE"><strong>Age:</strong></label>
+                <input type="text" placeholder="Enter Age" name="AGE" required /> <br />
+
+                <label for="YEARS_EMPLOYED"><strong>Years since your are Employed: </strong></label>
+                <input type="number" placeholder="Years" name="YEARS_EMPLOYED" required /> <br />
+
+                <label for="AMT_ANNUITY"><strong>Annuity Amount: </strong></label>
+                <input type="text" placeholder="Enter Amount" name="AMT_ANNUITY" required /> <br />
+
+                <label for="AMT_GOODS_PRICE"><strong> Amount of the Goods (Consumer Loans): </strong></label>
+                <input type="text" placeholder="Enter Amount" name="AMT_GOODS_PRICE" required /> <br />
+
+                <label for="AMT_CREDIT"><strong>Credit Amount: </strong></label>
+                <input type="text" placeholder="Enter Amount" name="AMT_CREDIT" required /> <br />
+
+                <label for="CODE_GENDER"><strong>Gender: </strong></label>
+                <select name="CODE_GENDER" placeholder="Gender">
+                    <option>M
+                    <option>F
+                </select> <br />
+
+                <label for="AMT_INCOME_TOTAL"><strong> Total Income: </strong></label>
+                <input type="text" placeholder="Enter Amount" name="AMT_INCOME_TOTAL" required /> <br />
+
+                <label for="CNT_FAMILY_MEMBERS"><strong>Number of Family Members: </strong></label>
+                <input type="number" name="CNT_FAMILY_MEMBERS" required /> <br />
+
+                <label for="CNT_CHILDREN"><strong>Number of Children: </strong></label>
+                <input type="number" name="CNT_CHILDREN" required /> <br />
+
+                <label for="FLAG_OWN_CAR"><strong>Do you own a Car? : </strong></label>
+                <input type="Radio" name="FLAG_OWN_CAR" Value="Y"> Yes
+                <input type="Radio" name="FLAG_OWN_CAR" Value="N"> No </input> <br />
+
+                <label for="OWN_CAR_AGE"><strong> Your Car's Age: </strong></label>
+                <input type="number" name="OWN_CAR_AGE" required /> <br />
+
+                <label for="DAYS_ID_PUBLISH"><strong> Days ID Publish: </strong></label>
+                <input type="number" name="DAYS_ID_PUBLISH" required /> <br />
+
+                <label for="prev_app_data"><strong>Previous Application Data Text File:</strong> </label>
+                <input type="file" name="prev_app_data" required> </input> <br />
+
+            </div>
+            <button type="submit"><strong> Predict </strong></button>
+        </div>
+    </form>
+</body>
+
+</html>
