@@ -46,7 +46,7 @@ Now, we will cover do you deploy and test a created model through a deplyoed web
 
 ## Project Deployment
 
-## How to test this project 
+### How to test this project 
 
 To test this project, just follow the steps given below:
 
@@ -60,26 +60,22 @@ To test this project, just follow the steps given below:
         pip install -r requirements.txt
         
   </li>
-  <li> After this is done, just run the app.py file:
-        <i> python3 app.py </i> 
+  <li> After this is done, just run the app.py file: </li>
+        
+  <i> python3 app.py </i> 
+</ol>      
+  
+  If everything goes as planned, your flask app should be up and running on port 5000. You can do the following:
        
-       If everything goes as planned, your flask app should be up and running on port 5000. You can do the following:
-       <ul>
+  Go to **--IP Address--:5000/fetch_data** to open up a form which takes the applicant data input. You also have to upload 
+  a csv file for the previous application data. I have incuded an example csv file in the  uploads/ folder. You only need that specific
+  columns. I will add an additional file stating what features you need for the current and previous application data for testing. 
         
-        Go to **<your ip or localhost>:5000/fetch_data** to open up a form which takes the applicant data input. You also have to upload 
-        a csv file for the previous application data. I have incuded an example csv file in the  uploads/ folder. You only need that specific
-        columns. I will add an additional file stating what features you need for the current and previous application data for testing. 
-        
-        Once you enter all the data and press the *Predict* button, you will be redirected to a new page which just returns a raw json file with 
-        predicted label and probablity value.
-        
-       </ul>
+  Once you enter all the data and press the *Predict* button, you will be redirected to a new page which just returns a raw json file with 
+  predicted label and probablity value.
+       
   
-  <li> Hence, this is all the project can do for now. </li>
-  
-  </ol>
-  
-  ## Future Plans
+## Future Plans
   
   I do plan to add additonal pages for this project. In particular, a page where a model can be trained too and then tested there itself. Please do support this 
   project by sharing it if you liked it and found it to be useful. 
