@@ -1,15 +1,19 @@
-# Home-Credit-Default-Risk-Deployment
+# Home Credit Default Risk
 
-## Introduction
+# H![Home-Credit-logo](https://user-images.githubusercontent.com/33721658/200103652-bf39b7d6-21e1-49be-ac55-cbe1835291a0.jpg)
 
-This repository covers how to deploy a ML model using simple step by step instructions. For this project, I am deploying a basic model for the popular <b>Home
-Credit Default Risk</b> Kaggle Problem. Please follow the given link to know more about the data:
+### Introduction
 
+This section covers an end-to-end solution approarch for the popular <b>Home
+Credit Default Risk</b> Kaggle Problem. 
+
+Please go to this like to get more information about this problem.
 https://www.kaggle.com/c/home-credit-default-risk/data
 
-## Business Problem Statement
 
-The main aim is to predict whether a applicant will default on his loan or not. Now to help us with this task, the company has provided a lot of past data about
+### Business Problem Statement
+
+The main aim is to predict whether an applicant will default on his loan or not. Now to help us with this task, the company has provided a lot of past data about
 the applicant like his/her financial history, relevant personal history, previous application details, etc. 
 
 ## Machine Learning Problem
@@ -22,9 +26,25 @@ defaults on his/her loan. The value can be interpreted as follows (given in trai
   <li> TARGET 1 : Defaulter </li>
 </ul>
 
-The metric we used for the purpose of training the deployment model is <b> AUC Score </b>. This repository just deals with the Deployment part and the actual model training :
-for both <i> Deployment </i> and <i> Challenge </i> will be shared in later repositories. For testing this, I have included a Light GBM model pickle file with this repo, located 
-in the <i> Model </i> folder. 
+The metric we used for the purpose of training the deployment model is <b> AUC Score </b>. 
+
+## Solution
+
+The solution for this problem can be broken into 4 parts for easier understanding: 
+
+1. <b>Exploratory Data Analysis</b> - This is covered in the Home_Credit_EDA notebook. The main goal is to understand the data to make some useful inferences.
+
+2. <b>Data Preprocessing and Feature Engineering</b> - Once we have a sense of what the data is like, we will use the resultant inferences from the first section to process our data (cleaning, handling missing data and outliers, etc) and create some useful new features using the processed data. This is covered in the first two sections of the Home_Credit_Modelling notebook.
+
+3. <b>Data Modelling</b> - Once we have the train and test data ready, we will start with data modelling and assess the performance of various popular machine learning models. This has been covered in the Home_Credit_Modelling notebook.
+
+4. <b>Model Deployment</b> - This is the last section in which we will test a lighter version of our model by actually deploying it as an application. We will cover how to setup this on any server of your choice and how to test this as well.
+
+Please note that you will find detailed comments on each step for both the EDA and Modelling notebooks (placed in the notebooks folder). Please feel free to connect with me incase you have any doubts on dhairyaparikh1998@gmail.com
+
+Now, we will cover do you deploy and test a created model through a deplyoed webpage.
+
+## Project Deployment
 
 ## How to test this project 
 
