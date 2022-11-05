@@ -1,6 +1,6 @@
 # Home Credit Default Risk
 
-# H![Home-Credit-logo](https://user-images.githubusercontent.com/33721658/200103652-bf39b7d6-21e1-49be-ac55-cbe1835291a0.jpg)
+# ![Home-Credit-logo](https://user-images.githubusercontent.com/33721658/200103652-bf39b7d6-21e1-49be-ac55-cbe1835291a0.jpg)
 
 ### Introduction
 
